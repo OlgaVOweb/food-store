@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link 
+} from "react-router-dom";
+import Shop from './Shop';
+import Recipes from './Recipes';
+import WeeklyMenu from './WeeklyMenu';
 import './App.css';
+import bag from './image/bag.png'
+import Footer from './Footer';
+
+
+/*
+import { useState } from 'react';
+import { data } from './data';
+
+import Food from './food';
+import Button from './Button';
+*/
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return <Router >
+   <nav>
+    <p className="logo">Hello Food</p>
+    <Link to="/" className="link">Shop</Link>
+    <Link to="/recipes" className="link">Recipes</Link>
+    <Link to="/weeklyMenu" className="link">Weekly menu</Link>
+    <img className="bag-menu" src={bag} alt="bag"></img>
+  </nav>
+  
+  <Routes>
+    <Route path="/" element={<Shop />} />
+    <Route path="/recipes" element={<Recipes />} />
+    <Route path="/weeklyMenu" element={<WeeklyMenu />} />
+  </Routes>
+
+  <Footer />
+  
+  </Router>
 }
 
 export default App;

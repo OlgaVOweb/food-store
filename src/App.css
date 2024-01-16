@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+body {   
+  background-color: #809e81;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*menu*/
+nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 120px 0 120px;
+  flex: 0 0 auto;
+  max-width: 1440px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  margin-right: auto;
+  padding: 10px;
+  font-size: 25px;
+  color: #257528;
+  text-shadow: 1px 1px 2px #257528;
+  text-transform: uppercase;
+  font-family: 'Cookie', cursive;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  padding: 15px 15px 0 0;
+  text-decoration: none;
+  color: #111111;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bag-menu {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+/*shop*/
+.container {
+  max-width: 1440px;
+  padding: 0 120px 40px 120px;
+  height: 80%;
+  
+}
+.cont {
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  color:#ffffff;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.filter {
+  color:#ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 0;
+  padding: 15px;
+}
+
+.change {
+  background-color:#ffffff;
+  color: #111111;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bolder;
+  margin: 5px;
+  width: 90px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  padding: 10px;
+  margin-top: 30px;
+  background-color: #fbfdfa;
+}
+
+h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background: #ffffff;
+  padding: 0 120px 0 120px;
+}
+
+.footer-content {
+  margin-right: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+/*recipe*/
+.Recipe {
+  background: #cfeedcab;
+  padding-bottom: 40px;
+}
+.Recipe-box {
+  width: 40%;
+  margin-left: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.Recipe_container {
+  width: 350px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.Recipe_container-img {
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.Recipe-header {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+.Recipe_container-search {
+  width: 350px;
+  padding: 10px 0;
+  background-color: transparent;
+  color: rgb(22, 46, 46);
+  box-shadow: inset 0px 0px 0px 4px rgb(43, 109, 92);
+}
+.Recipe_container-button{
+  width: 350px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: none;
+  background-color:#257528;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.button-search {
+  margin: 5px;
+}
+.Recipe_container-API {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+.container-API {
+  display: flex;
+  justify-content: center;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.calories {
+  margin: 5px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/*weekly menu*/
+.container-menuPlans {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-add{
+  background-color: #0bc014;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+}
+
+.button-del{
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background: none;
+  color: #c00b0b;
+  font-weight: bold;
+}
+
+.menu-title {
+  background-color: #f3d736;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+}
+.Menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.container_enter{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.myInput {
+  padding: 10px;
+  border-radius: 20px;
+}
+textarea {
+  border-radius: 20px;
+  border: 1px solid white;
+  margin-top: 20px;
+  height: 50px;
+  padding: 10px;
+}
+.Menu_container-width{
+  width: 350px;
+}
+
+
+.selected {
+  background-color: #81f787;
+}
+
+.default {
+  background-color: #f3d736;
+}
+
+.ask {
+  color: #81f787;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Day, .Menu {
+  padding: 0;
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
