@@ -41,19 +41,25 @@ function WeeklyMenu() {
     const getActiveMenu = () => {
         return menuPlans.find(({id}) => id === selectedDay)
     }
-
         return (
-    <div>
+        <div className="cont-weeklyPlan">
+            <div className="Menu_container">
+        <div className="Menu_container-width">
+            <h2 className="menu-title">Weekly meal plan</h2>
+            <img className="Recipe_container-img" src="https://images.unsplash.com/photo-1544070078-a212eda27b49?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="food"></img>
+            <button className="button-add" onClick={addMeal}>ADD</button>
+        </div>
+        <MenuAndIngredients
+        selectedDay={getActiveMenu()}
+        updatedDay={updatedDay}
+        />
         <MyMenu 
         menuPlans={menuPlans} 
         addMeal={addMeal} 
         deleteDay={deleteDay}
         selectedDay={selectedDay}
         setSelectedDay={setSelectedDay}/>
-        <MenuAndIngredients
-        selectedDay={getActiveMenu()}
-        updatedDay={updatedDay}
-        />
+    </div>
     </div>
     );
     }

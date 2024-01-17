@@ -7,7 +7,7 @@ const MenuAndIngredients = ({selectedDay, updatedDay}) => {
         })
     }
 
-    if (!selectedDay) return <p className="ask">Plan your weekly menu</p>
+    if (!selectedDay) return <p className="ask">Write your menu</p>
 
     return (
         <div className="container-menuPlans">

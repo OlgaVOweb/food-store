@@ -2,6 +2,7 @@ import { useState } from "react";
 import { data } from "./data";
 import Button from "./Button";
 import Food from "./food";
+import Footer from "./Footer";
 
 function Shop() {
     const [food, setFood] = useState(data);
@@ -12,12 +13,17 @@ function Shop() {
     }
   
     return (
+      <div className="main-container-shop">
         <div className="container">
           <div className="cont">
             <h2 className="back">Select the products</h2>
           </div>
           <Button filteredFood={chosenFood} setFood={setFood}/>
           <Food itemFood={food}/>
+        </div>
+        <div className="container-footer">
+        <Footer />
+        </div>
         </div>
     );
 }

@@ -10,7 +10,7 @@ import Recipes from './Recipes';
 import WeeklyMenu from './WeeklyMenu';
 import './App.css';
 import bag from './image/bag.png'
-import Footer from './Footer';
+
 
 
 /*
@@ -37,10 +37,9 @@ function App() {
     <Route path="/recipes" element={<Recipes />} />
     <Route path="/weeklyMenu" element={<WeeklyMenu />} />
   </Routes>
-
-  <Footer />
-  
+ 
   </Router>
+  
 }
 
 export default App;

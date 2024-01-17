@@ -1,5 +1,6 @@
 body {   
-  background-color: #809e81;
+  background-color: #f0b73d;
+  max-height: 100%;
 }
 
 /*menu*/
@@ -41,23 +42,26 @@ nav {
 }
 
 /*shop*/
+.main-container-shop{
+  display: flex;
+  flex-direction: column;
+}
 .container {
   max-width: 1440px;
   padding: 0 120px 40px 120px;
-  height: 80%;
-  
+
 }
+
 .cont {
   display: flex;
   justify-content: center;
 }
-
 .back {
-  color:#ffffff;
+  color:#111111;
   padding: 15px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bolder;
 }
 .filter {
@@ -103,8 +107,6 @@ h2, h3, h4 {
 /*footer*/
 
 .footer {
-  display: flex;
-  justify-content: flex-end;
   background: #ffffff;
   padding: 0 120px 0 120px;
 }
@@ -149,8 +151,8 @@ h2, h3, h4 {
   font-weight: bold;
 }
 .Recipe_container-search {
-  width: 350px;
-  padding: 10px 0;
+  width: 330px;
+  padding: 10px;
   background-color: transparent;
   color: rgb(22, 46, 46);
   box-shadow: inset 0px 0px 0px 4px rgb(43, 109, 92);
@@ -181,6 +183,9 @@ h2, h3, h4 {
   display: flex;
   justify-content: center;
 }
+.label {
+  text-align: center;
+}
 .list{
   display: flex;
   flex-direction: column;
@@ -192,20 +197,50 @@ h2, h3, h4 {
 }
 
 /*weekly menu*/
-.container-menuPlans {
+.cont-weeklyPlan {
   display: flex;
   justify-content: center;
+  background-color: #ffffff63;
 }
-
-.button-add{
-  background-color: #0bc014;
+.Menu_container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.menu-title {
   font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
   padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.button-add{
+  background-color: #257528;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
   border-radius: 20px;
   border: none;
   font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  width: 350px;
 }
 
+.ask {
+  color: #111111;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.default {
+  background-color: #f3d736;
+}
 .button-del{
   font-family: 'Montserrat', sans-serif;
   border: none;
@@ -213,24 +248,11 @@ h2, h3, h4 {
   color: #c00b0b;
   font-weight: bold;
 }
-
-.menu-title {
-  background-color: #f3d736;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-}
-.Menu_container {
-  display: flex;
-  flex-direction: column;
-}
 .container_enter{
   display: flex;
   flex-direction: column;
   width: 350px;
 }
-
 .myInput {
   padding: 10px;
   border-radius: 20px;
@@ -242,30 +264,15 @@ textarea {
   height: 50px;
   padding: 10px;
 }
-.Menu_container-width{
-  width: 350px;
-}
-
-
 .selected {
-  background-color: #81f787;
+  background-color: #7eff42;
 }
-
-.default {
-  background-color: #f3d736;
-}
-
-.ask {
-  color: #81f787;
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .Day, .Menu {
   padding: 0;
   margin: 5px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.container-menuPlans {
+  margin-bottom: 25px;
 }
