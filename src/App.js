@@ -11,16 +11,6 @@ import WeeklyMenu from './WeeklyMenu';
 import './App.css';
 import bag from './image/bag.png'
 
-
-
-/*
-import { useState } from 'react';
-import { data } from './data';
-
-import Food from './food';
-import Button from './Button';
-*/
-
 function App() {
 
   return <Router >

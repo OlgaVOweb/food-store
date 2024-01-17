@@ -109,6 +109,8 @@ h2, h3, h4 {
 .footer {
   background: #ffffff;
   padding: 0 120px 0 120px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-content {
