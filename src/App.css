@@ -45,11 +45,14 @@ nav {
 .main-container-shop{
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 95vh;
 }
+
+
 .container {
   max-width: 1440px;
-  padding: 0 120px 40px 120px;
-
+  padding: 0 120px 0 120px;
 }
 
 .cont {

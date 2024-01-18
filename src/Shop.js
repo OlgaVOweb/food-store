@@ -3,7 +3,6 @@ import { data } from "./data";
 import Button from "./Button";
 import Food from "./food";
 import Footer from "./Footer";
-import Search from "./Search";
 import ModalWindow from "./ModalWindow";
 
 function Shop() {
@@ -25,9 +24,9 @@ function Shop() {
           <Button filteredFood={chosenFood} setFood={setFood}/>
           <Food itemFood={food}/>
         </div>
-        <div className="container-footer">
+        
         <Footer />
-        </div>
+        
         </div>
     );
 }

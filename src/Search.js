@@ -16,11 +16,6 @@ function Search() {
         return data.item.toLowerCase().includes(search.toLowerCase())
     }), [search])
 
-    /*
-    const filteredProducts = data.filter((data) => {
-        return data.item.toLowerCase().includes(search.toLocaleLowerCase)
-    })
-*/
     return (
         <div>
             <h2>search</h2>
